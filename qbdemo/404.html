@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" data-beasties-container>
+<head>
+  <meta charset="utf-8">
+  <base href="/ngx-query-builder/">
+  <title>ngx-query-builder Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive demo and examples for ngx-query-builder — a standalone, signal-based Angular query builder.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+    // Apply the saved theme before first paint to avoid a light/dark flash.
+    (function () {
+      try {
+        var theme = localStorage.getItem('ngx-qb-demo-theme');
+        if (!theme) {
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) { /* ignore */ }
+    })();
+  </script>
+<style>:root{color-scheme:light;--font-sans:"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;--font-mono:"JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;--bg:#f6f7fb;--surface:#ffffff;--surface-2:#f8fafc;--surface-3:#eef2f7;--border:#e2e8f0;--border-strong:#cbd5e1;--text:#0f172a;--text-muted:#64748b;--text-subtle:#94a3b8;--primary:#4f46e5;--primary-hover:#4338ca;--primary-soft:#eef2ff;--primary-contrast:#ffffff;--success:#15803d;--success-soft:#dcfce7;--danger:#b91c1c;--danger-soft:#fee2e2;--warning:#a16207;--warning-soft:#fef9c3;--info:#0369a1;--info-soft:#e0f2fe;--code-bg:#0f172a;--code-text:#e2e8f0;--code-bar:#1e293b;--radius-sm:6px;--radius:10px;--radius-lg:14px;--shadow-sm:0 1px 2px rgb(15 23 42 / 6%);--shadow:0 1px 3px rgb(15 23 42 / 8%), 0 4px 16px rgb(15 23 42 / 4%);--focus-ring:0 0 0 3px rgb(79 70 229 / 35%);--topbar-height:60px;--sidebar-width:260px}*,*:before,*:after{box-sizing:border-box}html,body{margin:0;min-height:100%}body{font-family:var(--font-sans);font-size:14px;line-height:1.55;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased}</style><link rel="stylesheet" href="styles-7HKDJQGU.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-7HKDJQGU.css"></noscript></head>
+<body>
+  <app-root></app-root>
+<link rel="modulepreload" href="chunk-K54ZTVPO.js"><link rel="modulepreload" href="chunk-D5IUYBZI.js"><script src="polyfills-5CFQRCPP.js" type="module"></script><script src="main-NIYCB524.js" type="module"></script></body>
+</html>
