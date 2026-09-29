@@ -1,0 +1,1 @@
+import{T as t,aa as s,ga as o}from"./chunk-D5IUYBZI.js";function i(e){let n=o(e.value,{equal:()=>!1}),r=e.valueChanges.subscribe(u=>n.set(u));return t(s).onDestroy(()=>r.unsubscribe()),n.asReadonly()}function l(e){return JSON.stringify(e,null,2)}export{i as a,l as b};
