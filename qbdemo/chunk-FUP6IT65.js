@@ -1,4 +1,4 @@
-import{f as v}from"./chunk-ODXDNTY7.js";import{a as C,b}from"./chunk-WI3T22SQ.js";import{b as u,c as p,f as c,k as y,u as f,w as g,x as h}from"./chunk-XADUZPTL.js";import{$a as s,Ib as l,Ja as a,Qb as m,Za as o,_a as d,ab as n,va as i}from"./chunk-D5IUYBZI.js";var S=()=>["QueryBuilderConfig.entities","Entity.defaultField","Field.entity","Rule.entity"],T=`const orderTotal: Field = { name: 'Order total', type: 'number', entity: 'order' };
+import{f as v}from"./chunk-5RT2UV35.js";import{a as C,b}from"./chunk-ZAVSITCK.js";import{b as u,c as p,f as c,k as y,u as f,w as g,x as h}from"./chunk-O75ZW264.js";import{$a as d,Jb as l,Ka as a,Rb as m,_a as o,ab as s,bb as n,wa as i}from"./chunk-KVN5PWNS.js";var S=()=>["QueryBuilderConfig.entities","Entity.defaultField","Field.entity","Rule.entity"],T=`const orderTotal: Field = { name: 'Order total', type: 'number', entity: 'order' };
 
 config: QueryBuilderConfig = {
   entities: {
