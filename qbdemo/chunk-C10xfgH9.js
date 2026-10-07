@@ -1,0 +1,17 @@
+import{$t as uD,C as Ey,St as ev,Wt as pi,an as wE,ct as Zf,qt as qf,v as Dc,vt as dD,w as FE}from"./main-CXXKAVGG.js";import{n as l,t as i}from"./chunk-BwnqWn6R.js";import{t as ce}from"./chunk-CnGJRIlR.js";import{S as wd,a as Ls,c as Qr,g as bi,n as Gr,s as Ne}from"./chunk-DV-skXfC.js";import{t as A}from"./chunk-BuLU56de.js";var k=()=>[`QueryBuilderConfig.entities`,`Entity.defaultField`,`Field.entity`,`Rule.entity`];var O=`const orderTotal: Field = { name: 'Order total', type: 'number', entity: 'order' };
+
+config: QueryBuilderConfig = {
+  entities: {
+    customer: { name: 'Customer' },
+    order: { name: 'Order', defaultField: orderTotal },   // field picked when switching to "Order"
+    product: { name: 'Product' },                          // falls back to the first product field
+  },
+  fields: {
+    customerName: { name: 'Name', type: 'string', entity: 'customer' },
+    segment:      { name: 'Segment', type: 'category', entity: 'customer', options: [...] },
+    orderDate:    { name: 'Order date', type: 'date', entity: 'order' },
+    orderTotal,
+    sku:          { name: 'SKU', type: 'string', entity: 'product' },
+    ...
+  },
+};`;var U=(()=>{class e{constructor(){this.orderTotal={name:`Order total`,type:`number`,entity:`order`},this.config={entities:{customer:{name:`Customer`},order:{name:`Order`,defaultField:this.orderTotal},product:{name:`Product`}},fields:{customerName:{name:`Name`,type:`string`,entity:`customer`},segment:{name:`Segment`,type:`category`,entity:`customer`,options:[{name:`Enterprise`,value:`enterprise`},{name:`SMB`,value:`smb`},{name:`Consumer`,value:`consumer`}]},vip:{name:`VIP`,type:`boolean`,entity:`customer`},orderDate:{name:`Order date`,type:`date`,entity:`order`},orderTotal:this.orderTotal,sku:{name:`SKU`,type:`string`,entity:`product`},stock:{name:`Stock`,type:`number`,entity:`product`}}},this.queryCtrl=new Gr({condition:`and`,rules:[{entity:`customer`,field:`segment`,operator:`=`,value:`enterprise`},{entity:`order`,field:`orderTotal`,operator:`>=`,value:1e3},{condition:`or`,rules:[{entity:`product`,field:`sku`,operator:`like`,value:`PRO-%`},{entity:`customer`,field:`vip`,operator:`=`,value:!0}]}]},{nonNullable:!0}),this.value=i(this.queryCtrl),this.tabs=FE(()=>[{id:`output`,label:`Output`,language:`json`,code:l(this.value())},{id:`text`,label:`Readable`,language:`text`,code:A(this.value(),this.config)},{id:`ts`,label:`Config`,language:`typescript`,code:O}])}static{this.ɵfac=function(t){return new(t||e)}}static{this.ɵcmp=ev({type:e,selectors:[[`app-entities-example`]],decls:4,vars:5,consts:[[`eyebrow`,`Configuration`,`title`,`Entities`,`description`,`Group fields by entity. An entity selector appears in each rule and the field list is filtered to the selected entity. Use defaultField to control which field is picked when the entity changes.`,3,`apis`],[`heading`,`Customers, orders & products`,`description`,`Switch a rule's entity — the field list and default field follow.`,3,`tabs`],[`data-testid`,`example-builder`],[3,`formControl`,`config`]],template:function(t,r){t&1&&(Zf(0,`app-page-header`,0),pi(1,`app-demo-card`,1)(2,`div`,2)(3,`query-builder`,3),uD(),Dc()()()),t&2&&(qf(`apis`,wE(4,k)),Ey(),qf(`tabs`,r.tabs()),Ey(2),qf(`formControl`,r.queryCtrl)(`config`,r.config),dD())},dependencies:[Ls,bi,Qr,Ne,wd,ce],encapsulation:2})}}return e})();export{U as EntitiesExampleComponent};

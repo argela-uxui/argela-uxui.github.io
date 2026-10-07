@@ -1,0 +1,1 @@
+import{It as jo,g as D,tn as ve}from"./main-CXXKAVGG.js";function i(e){let n=jo(e.value,{equal:()=>!1}),r=e.valueChanges.subscribe(u=>n.set(u));return D(ve).onDestroy(()=>r.unsubscribe()),n.asReadonly()}function l(e){return JSON.stringify(e,null,2)}export{l as n,i as t};
